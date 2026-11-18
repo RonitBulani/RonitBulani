@@ -1,6 +1,6 @@
 # Hi, I'm Ronit
 
-I'm based in Manchester and have recently completed the coursework and dissertation for my MSc in Data Science at Lancaster University. Most of my recent projects have involved Python, machine learning and working out how to make research useful beyond a notebook.
+I'm a Lancaster University Data Science graduate based in Manchester. Most of my recent projects have involved Python, machine learning and working out how to make research useful beyond a notebook.
 
 Before my MSc, I worked in marketing strategy and performance marketing. That experience has stayed with me: I like to understand the problem first, choose methods that fit it, and be able to explain what the results actually mean.
 
