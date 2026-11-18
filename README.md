@@ -32,9 +32,13 @@ The linked repository includes the notebooks, results and an explanation of exac
 
 ## Dissertation with Network Rail
 
-For my MSc dissertation, I worked with Network Rail on a way to update drainage asset deterioration matrices using inspection data. I implemented an existing continuous-time Markov modelling approach in Python and built validation and diagnostic checks around it. I also explored how the results varied over time and across asset groups.
+For my MSc dissertation, I worked with **Network Rail** on making it easier to update the deterioration matrices used in drainage asset planning. These matrices estimate how an asset's condition may change over time, and the aim was to make it more practical to recalculate them as new inspection data becomes available.
 
-The industry data and project code are not published here.
+I implemented an established **continuous-time Markov modelling** method in Python and developed a workflow for preparing inspection histories, estimating condition transitions and producing updated matrices. A significant part of the work was checking how reliable those estimates were. I used simulations with known outcomes, tested predictions against later inspection records, and added diagnostics and uncertainty checks.
+
+I also investigated how deterioration patterns varied over time, across materials and between structural and service condition. The resulting Python matrices were accepted by Network Rail for integration into its asset-planning workflow.
+
+The project involved internal industry data, so the full dataset and code are not published here.
 
 ## What I use
 
