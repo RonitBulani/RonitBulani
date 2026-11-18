@@ -16,15 +16,19 @@ I later turned the research into **ParliamentAI**, a local application built wit
 
 ### [Byzantine-Resilient Communication for Multi-Agent RL](https://github.com/RonitBulani/byzantine-resilient-marl-comms)
 
-In a five-person MSc team project, I worked on how agents communicate when some of the messages they receive cannot be trusted. My part was the communication system: four types of Byzantine attacks and four approaches to sharing or combining messages, including trimmed mean and reputation-based methods.
+This was part of a five-person MSc project on cooperative multi-agent reinforcement learning. We studied what happens when agents rely on messages from other agents and some of those messages are unreliable. I led the **Byzantine attack and communications work**, implementing random-noise, misdirection, spoofing and silence attacks, alongside broadcast, gossip, trimmed-mean and reputation-based communication methods.
 
-The linked repository contains my part of the implementation, with the full team project credited separately.
+The wider team evaluated the system over **30,000 episodes**. One interesting finding was how strongly losing messages could affect performance: in the narrow-visibility setting, silence reduced the recorded MAPPO capture rate by **48.3 percentage points** at a 50% Byzantine fraction. The experiment used a shared channel with access to the true target position, so these findings are about robustness to corrupted communication under that setup—not fully local sensing.
+
+The repository contains the communication components I built and links back to the original team project. [Implementation and limitations](https://github.com/RonitBulani/byzantine-resilient-marl-comms/blob/main/docs/IMPLEMENTATION_LIMITATION.md)
 
 ### [Amazon Product Analytics — PostgreSQL and Clustering](https://github.com/RonitBulani/amazon-product-clustering-postgres)
 
-For another university group project, I worked on exploring Amazon product and review data, organising it in PostgreSQL and comparing different ways of clustering products. My work included data quality checks, SQL queries and indexes, and comparisons of K-Means, Bisecting K-Means and Gaussian Mixture Models.
+In another university group project, I focused on making a large collection of Amazon product and review data easier to explore and analyse. My contribution covered **exploratory data analysis**, looking at missing values, duplicates, pricing, ratings and category patterns, followed by work in **PostgreSQL** to organise users, products and reviews. I wrote queries and added indexes for common lookups and full-text search.
 
-The repository focuses on my contribution rather than presenting the entire group project as my own.
+I also compared **K-Means, Bisecting K-Means and Gaussian Mixture Models** for product clustering, using text embeddings and numeric features, then explored the groups through dimensionality reduction and visualisations. K-Means gave the strongest results on the recorded internal diagnostics, although the methods used different distance assumptions, so the comparison has limits.
+
+The linked repository includes the notebooks, results and an explanation of exactly which parts were my work. [Clustering results](https://github.com/RonitBulani/amazon-product-clustering-postgres/blob/main/results/RESULTS.md)
 
 ## Dissertation with Network Rail
 
